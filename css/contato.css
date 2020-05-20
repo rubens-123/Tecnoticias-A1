@@ -1,23 +1,6 @@
 
 /*inicio*/
-.container{
 
-	width: 470px;
-	height: 210px;
-	display: table-cell;
-	float: right;
-	position: absolute;
-	top:200px;
-	left:1435px;
-}
- .myChart{
-
-	background-color: aquamarine;
-	display: table;
-	float: left;
-	border: 1px dotted red;
-	color: red;
- }
 body {
 	font-family: "Crimson Text", "Times New Roman", serif;
 	background-image: url("img/fundo.gif");
@@ -64,25 +47,72 @@ body {
 }
 /*Termino da Config do menu*/
 /*config do corpo da pagina*/
-.corpo{
-	width: 960px;
-	margin: auto;
-	padding: 30px 0;
-	background-color: rgba(29, 4, 44, 0.651);
-}
-.noticias{
+.cont{
+   color: #fff;
+   display: table-cell;
+   position: absolute;
+   top: 460px;
+   left: 300px;
+   font-size: 20px;
 
-	display: table;
 }
-.img{
+form {
+    font-family: Verdana,Tahoma,sans-serif;
+    font-size: 15px;
+    background-color:transparent;
+	width: 500px;
+    height: 450px;
+}
+ 
+.caixa {
+	margin-left: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px black;
+}
+ 
+input, textarea {
+    width: 200px;
+    padding: 10px;
+    color: black;
+    margin-left: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+}
+ 
+input:hover, textarea:hover, input:focus, textarea:focus {
+    border-color: #000066;
+    box-shadow: 5px 0px 9px #FFFF;
+    color: black;
+    font-weight: bold;
+}
+ 
+.submit input {
+    background-color:  rgb(85, 37, 163);
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+    color: black;
+}
+ 
+textarea {
+    width: 400px;
+    height: 120px;
+    line-height: 20px;
+    max-width: 400px;
+}
+ 
+form label {
+    margin-left: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
 
-	display: table-cell;
-	float: right;
-}
-.texto{
-	display: table-cell;
-	float: left;
-}
 
  .titulos{
     background-color:  #1494c7;
@@ -104,54 +134,16 @@ body {
     background-color: rgba(85, 37, 163, 0.100);
 
  }
- /*início config botão de leia mais  */
- .botao{
-	  vertical-align: top; height:auto !important;
-	
-	}
+.Mform{
 
-.botao a {
-	font-size: 20px;
-	color:  rgb(98, 34, 100);
-	text-decoration: none ;
+   display: table-cell;
+   position: absolute;
+   top: 200px;
+   left: 700px;
+
+
 
 }
-.botao a:hover{
-
-	color: rgb(131, 13, 13)
-
-}
-
- .lista {
-	 
-	display:none;
-
-}
- .mostar {
-	 
-	display: none; 
-}
- .ocultar:target + .mostar {
-	 
-	display: inline;
- }
- .ocultar:target {
-	 
-	display: none;
- }
- .ocultar:target ~ .lista {
-	 
-	display:inline;
- }
- @media print {
-	  .ocultar, .mostar {
-		   
-		display: none; 
-	} 
-
-}
-/*termino config botão leia mais*/
-
 
  h1, h2 {
 	font-family: "Open Sans Condensed", "Arial", sans-serif;
@@ -166,13 +158,15 @@ p {
 
 /*rodape */
 .rodape-pagina {
+	position:absolute;
+	bottom:0;
+	width:100%;
     text-align: center;
 	background-color: #1494c7;
 	color: #F2FFFC;
 	clear: both;
 	bottom: 0;
 	left: 0;
-	width: 100%;
 	padding: 15px;
 	border-top: 10px solid rgb(85, 37, 163);
 }

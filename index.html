@@ -8,10 +8,79 @@
 		<meta charset="utf-8">
         <link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/site.css">
-		
+		<meta charset="UTF-8">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
   
  </head>
  <body>
+	<div class="container">
+		
+		<canvas id="myChart"></canvas>
+	  </div>
+	
+	  <script>
+		let myChart = document.getElementById('myChart').getContext('2d');
+	
+		// Global Options
+		Chart.defaults.global.defaultFontFamily = 'Arial';
+		Chart.defaults.global.defaultFontSize = 20;
+		Chart.defaults.global.defaultFontColor = 'red';
+		Chart.defaults.global.defaultFontStyle = 'normal';
+		let massPopChart = new Chart(myChart, {
+		  type:'line', 
+		  data:{
+			labels :["20 de abril","23 de abril","26 de abril","29 de abril","2 de maio","10 de maio","15 de maio","19 de maio"],
+			datasets:[{
+			  label:'Casos',
+			  data: [73262,73656,84889,64730,91977,61578,90269,112637],
+			  backgroundColor:'transparent',
+			  fontColor:'red',
+			  borderWidth:2,
+			  borderColor:'red',
+			  hoverBorderWidth:3,
+			  hoverBorderColor:'red'
+			},
+			{
+			  label:'Mortes',
+			  data: [5296,6688,6017,5376,5799,8499,9073,4332],
+			  backgroundColor:'transparent',
+			  fontColor:'blue',
+			  borderWidth:2,
+			  borderColor:'blue',
+			  hoverBorderWidth:3,
+			  hoverBorderColor:'blue'
+			}]
+		  },
+		  options:{
+			title:{
+			  display:true,
+			  fontColor:'red',
+			  text:'Coronavírus (COVID-19)-Global',
+			  fontSize:25
+			},
+			legend:{
+			  display:true,
+			  position:'right',
+			  labels:{
+				fontColor:'red'
+			  }
+			},
+			layout:{
+			  padding:{
+				left:60,
+				right:0,
+				bottom:0,
+				top:0
+				
+			  }
+			},
+			tooltips:{
+			  enabled:true
+			}
+		  }
+		});
+	  </script>
+	
 <!--Conteúdo principal da página-->
 	<main>
 
@@ -21,11 +90,12 @@
 	    <nav class="menu">
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="#">TecStore</a></li>
-					<li><a href="#">Sobre Nós</a></li>
-					<li><a href="#">Contato</a></li>
+					<li><a href="loja.html">TecStore</a></li>
+					<li><a href="sobre.html">Sobre Nós</a></li>
+					<li><a href="contato.html">Contato</a></li>
 				</ul>
 		</nav>
+		
 <!--Conteúdo da página (Notícias)-->
       <section class="corpo">
 		<div class="noticias">
@@ -124,17 +194,28 @@
 				</p>
 			 </div>
 			</div>
-			<h2 class="titulos">Professor da UNITINS Danilo Queiroz da a nota 10 para seu aluno </h2>
+			<h2 class="titulos">Coronavírus: os negócios globais que conseguiram crescer durante a pandemia </h2>
 			<div class="img">
-				<img src="img/n4.jpg" width="300" height="135"/>
+				<img src="img/m4.jpg" width="300" height="135"/>
 		   </div>
-			<p class="text-sub">O professor que atualmente leciona a materia de Front-end no primeiro período para o curso de Sistemas da informação na Unitins,se surpreender com o esforço de seu aluno e da a nota 10 a ele. </p>
+			<p class="text-sub">Comércio eletrônico, serviços de streaming e empresas de delivery parecem ser favorecidos pelo isolamento social. Mesmo nas histórias de sucesso, é preciso interpretar dados com cautela. </p>
 		    <div class="botao">
 				<a href="#ocultar4" class="ocultar" id="ocultar4"><img src="img/leia-mais.png" width="130" height="60" /></a>
 				<a href="#mostar4" class="mostar" id="mostar4">fechar</a>
 			<div class="lista">
 				   <p class="Texto-noticia">
-					   Da um 10 ai professor nunca te pedi nada <a href="https://www.unitins.br/apps/portaldoprofessor">;-;</a>
+					A pandemia de coronavírus causou muitos problemas para a economia global, mas as medidas de isolamento social que restringem a circulação de pessoas também ajudaram, por outro lado, algumas empresas a prosperar.
+
+					No entanto, mesmo nas histórias de sucesso, é preciso interpretar os dados com cuidado.
+					
+					V, U ou W, os 3 cenários possíveis para a recuperação econômica após a pandemia de covid-19
+					Entregadores de aplicativo trabalham mais e ganham menos na pandemia, diz pesquisa
+					O futuro incerto das viagens aéreas após a pandemia de coronavírus
+					Por exemplo, muitos estão usando a internet para fazer compras, o que pode ser uma notícia boa para o comércio eletrônico. Mas os números da gigante americana Amazon, no entanto, contam uma história diferente.
+					
+					Pertencente ao homem mais rico do mundo, Jeff Bezos, a empresa ganhou as manchetes em meados de abril como uma das vencedoras claras da crise dos coronavírus, com hordas de clientes entrando em seu site e gastando cerca de US$ 11 mil (R$ 63 mil atualmente) por segundo.
+					
+					Em resposta, as ações da Amazon registraram um aumento histórico.</a>
 				  </p>
 	      </div>	
 		</div>
@@ -177,6 +258,7 @@
 	&copy; Rubens Eduardo-2020
   </footer>
  </div>
+ 
 <!-- fim rodape-->
   </body>
 </html>

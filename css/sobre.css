@@ -1,23 +1,5 @@
 
 /*inicio*/
-.container{
-
-	width: 470px;
-	height: 210px;
-	display: table-cell;
-	float: right;
-	position: absolute;
-	top:200px;
-	left:1435px;
-}
- .myChart{
-
-	background-color: aquamarine;
-	display: table;
-	float: left;
-	border: 1px dotted red;
-	color: red;
- }
 body {
 	font-family: "Crimson Text", "Times New Roman", serif;
 	background-image: url("img/fundo.gif");
@@ -166,13 +148,15 @@ p {
 
 /*rodape */
 .rodape-pagina {
+	position:absolute;
+	bottom:0;
+	width:100%;
     text-align: center;
 	background-color: #1494c7;
 	color: #F2FFFC;
 	clear: both;
 	bottom: 0;
 	left: 0;
-	width: 100%;
 	padding: 15px;
 	border-top: 10px solid rgb(85, 37, 163);
 }
@@ -183,8 +167,51 @@ p {
 
 
 }
+.sobre{
+
+	color: #FFF;
+	font-family: "Open Sans Condensed", "Arial", sans-serif;
+	text-align: center; 
+	font-size: 35px;
+	display: table-cell;
+	position: absolute;
+	top: 200px;
+	left: 900px;
 
 
+}
+ .sobre2{
+ 
+	color: #FFF;
+	font-family: "Open Sans Condensed", "Arial", sans-serif;
+	text-align: center; 
+	font-size: 30px;
+	display: table-cell;
+	position: absolute;
+	top: 500px;
+	left: 300px;
+
+ }
+ .imgs2{
+
+	display: table-cell;
+	position: absolute;
+	top: 490px;
+	left: 1300px;
+
+
+ }
+ .imgs{
+
+  display: table-cell;
+  position: absolute;
+  top: 200px;
+  left: 490px;
+    
+
+
+
+ }
 .footer{
 
 	text-decoration: none ;
